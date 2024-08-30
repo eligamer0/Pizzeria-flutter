@@ -1,0 +1,183 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(const MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      // debugShowCheckedModeBanner: false,
+      title: 'Pizzeria',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Image.network(
+                    'https://cdn-icons-png.flaticon.com/512/2821/2821801.png',
+                    width: 40.0,
+                    height: 40.0,
+                  ),
+
+                  const SizedBox(width: 10),
+                  const Text('PIZZA', 
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Roboto',
+                    ),
+                  ),
+                ],
+              ),
+              const Text('La mejor pizza',
+              style: TextStyle(
+                color: Colors.blue,
+                fontSize: 13,
+                fontWeight: FontWeight.bold
+              ),
+              )
+            ],
+          ),
+          backgroundColor: const Color.fromARGB(255, 218, 212, 212),
+        ),
+        body: GridView.count(
+          crossAxisCount: 1,
+          scrollDirection: Axis.horizontal,
+          
+            // children: [
+            //   const Text('Pizza Elias:'),
+            //   const Text('El sabor auténtico de Italia en cada porción.')
+            // ],
+
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(20),
+              // padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  border: Border.all(color: Colors.blue),
+                ),
+                child: Column(
+                  children: [
+                    Image.asset('assets/pizzapeperoni.jpeg'),
+                    const SizedBox(height: 8),
+                    const Text('Pizza Peperoni', 
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const Text('pizza mediana de peperoni con queso',
+                      style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 14,
+                        
+                      ),
+                    ),
+                    
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  border: Border.all(color: Colors.blue),
+                ),
+                child: Column(
+                  children: [
+                    Image.asset('assets/pizzapeperoni.jpeg'),
+                    const SizedBox(height: 8),
+                    const Text('Pizza Peperoni', 
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const Text('pizza mediana de peperoni con queso',
+                      style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 14,
+                        
+                      ),
+                    ),
+                    
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+              child: Container(
+                decoration: BoxDecoration(
+                  // borderRadius: BorderRadius.only(
+                  //   topLeft: Radius.circular(10),
+                  //   topRight: Radius.circular(10.10)
+                  // ),
+                  color: Colors.white,
+                  border: Border.all(color: Colors.blue),
+                ),
+                child: Column(
+                  children: [
+                    Image.asset('assets/pizzapeperoni.jpeg'),
+                    const SizedBox(height: 8),
+                    const Text('Pizza Peperoni', 
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const Text('pizza mediana de peperoni con queso',
+                      style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 14,
+                        
+                      ),
+                    ),
+                    
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  border: Border.all(color: Colors.blue),
+                ),
+                child: Column(
+                  children: [
+                    Image.asset('assets/pizzapeperoni.jpeg'),
+                    const SizedBox(height: 8),
+                    const Text('Pizza Peperoni', 
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const Text('pizza mediana de peperoni con queso',
+                      style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 14,
+                        
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

@@ -1,0 +1,28 @@
+name: flutter_app_pizza
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: 2.3.2 
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0     # si empieza a joder se va
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
+fonts:
+  - family: Roboto
+    fonts:
+      - asset: assets/fonts/Roboto/Roboto-Black.ttf
